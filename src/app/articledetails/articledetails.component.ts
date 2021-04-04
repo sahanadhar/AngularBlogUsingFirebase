@@ -19,14 +19,20 @@ export class ArticledetailsComponent {
   //@Input article;
   //constructor(private router: Router) {}
   article;
-  id; 
+  id;
+  data;
   constructor(
     private afStore: AngularFirestore,
     private activatedRoute: ActivatedRoute
   ) {
     this.id = this.activatedRoute.snapshot.params.id;
+    console.log(this.id);
     this.afStore
       .doc(`Articles/${this.id}`)
-      .valueChanges.subscribe(article=>this.data = article);
+      .valueChanges()
+      .subscribe(article => {
+        this.data = article;
+        console.log(this.data);
+      });
   }
 }

@@ -1,0 +1,16 @@
+.middle {
+  text-align: center;
+}
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.innercardcontainer{
+  min-width: 80vw;
+  border-radius: 9px;
+  background: linear-gradient(145deg, #ffffff, #e1e0e0);
+  box-shadow: 20px 20px 29px #d5d4d4, -20px -20px 29px #ffffff;
+  margin: 30px;
+  padding: 30px;
+}

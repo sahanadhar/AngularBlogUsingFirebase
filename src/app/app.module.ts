@@ -10,7 +10,9 @@ import { ArticleserviceService } from "./articles.service";
 import { AppRoutingModule } from "./app-routing.module";
 import { MyhomepageComponent } from "./myhomepage/myhomepage.component";
 import { ViewfullarticleComponent } from "./viewfullarticle/viewfullarticle.component";
-const firebaseConfig = {};
+const firebaseConfig = {
+  
+};
 @NgModule({
   imports: [
     BrowserModule,

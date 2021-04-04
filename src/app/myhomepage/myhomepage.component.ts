@@ -28,8 +28,8 @@ export class MyhomepageComponent implements OnInit {
     console.log(article);
     this.router.navigate(["/", "articles", article.propertyId]);
   }
-  SerchAny() {
-    console.log(this.search);
-    console.log(this.article);
-  }
+  // SerchAny() {
+  //   console.log(this.search);
+  //   console.log(this.article);
+  // }
 }
