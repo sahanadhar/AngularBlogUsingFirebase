@@ -1,0 +1,17 @@
+<div class="middle">
+  <h1> Sahana's Blog </h1>
+</div>
+<button class="Div1">
+  <h4>Add new Article</h4>
+</button>
+<button class="Div1" click()="SearchAny()">
+  <h4>search</h4>
+</button>
+<div class="card-list">
+  <div *ngFor="let article of displayArray" class="card" (click)="viewFullArticle(article)">
+    <h3>{{article.Title}}</h3>
+    <h3>{{article['Written By']}}</h3>
+    <p>{{article.Content}}</p>
+    <p>{{article['Created On']}}</p>
+  </div>
+</div>
