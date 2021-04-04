@@ -9,7 +9,7 @@ import { ArticledetailsComponent } from "./articledetails/articledetails.compone
 import { ArticleserviceService } from "./articles.service";
 import { AppRoutingModule } from "./app-routing.module";
 import { MyhomepageComponent } from "./myhomepage/myhomepage.component";
-import { ViewfullarticleComponent } from "./viewfullarticle/viewfullarticle.component";
+import { AddnewarticleComponent } from "./addnewarticle/addnewarticle.component";
 const firebaseConfig = {
  
 };
@@ -26,7 +26,7 @@ const firebaseConfig = {
     HelloComponent,
     ArticledetailsComponent,
     MyhomepageComponent,
-    ViewfullarticleComponent
+    AddnewarticleComponent
   ],
   bootstrap: [AppComponent],
   providers: [ArticleserviceService]

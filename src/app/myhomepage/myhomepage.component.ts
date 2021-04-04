@@ -43,4 +43,8 @@ export class MyhomepageComponent implements OnInit {
   clearSearch() {
     this.search = "";
   }
+  AddNewContent() {
+    console.log("add");
+    this.router.navigate(["/", "newarticle"]);
+  }
 }

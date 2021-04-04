@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router"; // CLI imports router
+import { AddnewarticleComponent } from "./addnewarticle/addnewarticle.component";
 import { ArticledetailsComponent } from "./articledetails/articledetails.component";
 import { MyhomepageComponent } from "./myhomepage/myhomepage.component";
 
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: "articles/:id",
     component: ArticledetailsComponent
+  },
+  {
+    path: "newarticle",
+    component: AddnewarticleComponent
   }
 ];
 
