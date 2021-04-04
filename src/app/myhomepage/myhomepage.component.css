@@ -10,11 +10,15 @@
 }
 .middle {
   text-align: center;
+  background-color: gray;
+  font-size: 70px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 .Div1 {
   border-radius: 9px;
-  margin: 30px;
-  padding: 30px;
+  margin: 15px;
+  padding: 15px;
   margin-right: 5px;
   min-height: 50px;
   float: right;

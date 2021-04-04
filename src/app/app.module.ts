@@ -11,7 +11,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { MyhomepageComponent } from "./myhomepage/myhomepage.component";
 import { ViewfullarticleComponent } from "./viewfullarticle/viewfullarticle.component";
 const firebaseConfig = {
-  
+ 
 };
 @NgModule({
   imports: [

@@ -1,5 +1,7 @@
 .middle {
   text-align: center;
+  background-color: grey;
+  font-size: 70px;
 }
 .cardcontainer{
   display: flex;

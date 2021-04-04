@@ -9,6 +9,8 @@ import { Router } from "@angular/router";
 })
 export class MyhomepageComponent implements OnInit {
   displayArray = [];
+  search = "texxt";
+  newArray = [];
   constructor(private afStore: AngularFirestore, private router: Router) {
     this.afStore
       .collection("Articles")
@@ -28,8 +30,17 @@ export class MyhomepageComponent implements OnInit {
     console.log(article);
     this.router.navigate(["/", "articles", article.propertyId]);
   }
-  // SerchAny() {
-  //   console.log(this.search);
-  //   console.log(this.article);
-  // }
+  SearchAny() {
+    console.log(this.search);
+    console.log(this.displayArray);
+    // if (this.search==='') {
+    //   this.newArray=[];
+    // } else {
+    //   this.newArray=this.displayArray.filter(this.afStore.collection("Artciles").includes(this.search));
+    // }
+  }
+
+  clearSearch() {
+    this.search = "";
+  }
 }
